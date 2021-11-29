@@ -17,7 +17,7 @@ import { CreatedChannelsComponent } from './CreatedChannels/CreatedChannels.comp
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [ChannelService],
   bootstrap: [AppComponent]
