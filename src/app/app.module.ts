@@ -7,17 +7,22 @@ import { AppComponent } from './app.component';
 import { ChannelComponent } from './Channels/Channels.component';
 import { MainComponent } from './Main/Main.component';
 import { CreatedChannelsComponent } from './CreatedChannels/CreatedChannels.component';
+import { EditChannelsComponent } from './EditChannels/EditChannels.component';
+import { ReactiveFormsModule } from '@angular/forms';
+
 @NgModule({
-  declarations: [			
+  declarations: [					
     AppComponent,
       ChannelComponent,
       MainComponent,
-      CreatedChannelsComponent
+      CreatedChannelsComponent,
+      EditChannelsComponent
    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [ChannelService],
   bootstrap: [AppComponent]

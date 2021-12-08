@@ -3,3 +3,8 @@
     <p>{{ messages.username }}: {{ messages.message}} </p>
   </div>
 </div>
+
+<button (click)="toggleEdit()">Toggle Editing</button><br>
+<div *ngIf="isEditing">
+    <app-Channel-Edit (onPostEvent)="toggleEdit()"></app-Channel-Edit>
+</div>
